@@ -1,2 +1,61 @@
-# irissetosa_web
-irissetosa_web
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Setosa</title>
+    <style>
+        body { 
+            background-color: #000; 
+            color: #ccc; /* 완전 흰색보다 회색이 더 터미널 같음 */
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace; 
+            line-height: 1.5;
+        }
+        .container { 
+            text-align: left; 
+            width: 90%;
+            max-width: 600px;
+        }
+        h1 { 
+            font-size: 1.5rem; 
+            color: #fff;
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+        p { margin: 8px 0; font-size: 0.9rem; }
+        .command { color: #0f0; margin-right: 10px; } /* 초록색 프롬프트 */
+        .value { color: #fff; }
+        
+        /* 깜빡이는 커서 효과 */
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 1rem;
+            background-color: #0f0;
+            animation: blink 1s step-end infinite;
+            vertical-align: middle;
+        }
+        @keyframes blink { 50% { opacity: 0; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>./project_iris_setosa.sh</h1>
+        
+        <p><span class="command">user@Bucheon:~$</span> date</p>
+        <p class="value">2025-Dec-07</p>
+        <br>
+        <p><span class="command">user@Bucheon:~$</span> check status</p>
+        <p class="value">Initializing modules... [OK]</p>
+        <p class="value">Current Location: Convenience Store (Sector: Hell)</p>
+        <p class="value">Condition: Low Battery Mode (Warning: Intoxicated subjects detected)</p>
+        <br>
+        <p><span class="command">user@Bucheon:~$</span> _<span class="cursor"></span></p>
+    </div>
+</body>
+</html>
